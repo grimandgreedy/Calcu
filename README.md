@@ -37,27 +37,27 @@ The calculator evaluates equations using Reverse Polish Notation (RPN). Here's a
 ## Example expressions
 
 Simple expression
-- Expression: $3+6\times 4-3\times (1-2)$
+- Expression: `3+6*4-3*(1-2)`
 - Expression stack: `[3, 6, 4, '*', '+', 3, 1, 2, '-', '*', '-']`
 - Result: 30
     
 
 Boolean evaluation:
-- Expression: $5^{4} == 5 \times 5 \times 5 \times 5$
+- Expression: `5**4 == 5*5*5*5`
 - Expression stack: `[5, 4, '**', 5, 5, '*', 5, '*', 5, '*', '==']`
 - Result: 1
 
 Boolean evaluation 2:
-- Expression: $5^{6} \geq 3^{8}$
+- Expression: `5**6 >= 3**8`
 - Expression stack: `[5, 6, '**', 3, 8, '**', '>=']`
 - Result: 1
 
 Bitshift
-- Expression: $2 << 12$
+- Expression: `2 << 12`
 - Expression stack: `[2, 12, '<<']`
 - Result: 1
 
 XOR
-- Expression: $1023 \space xor \space 3$
+- Expression: `1023 xor 3`
 - Expression stack: `[1023, 3, 'xor']`
 - Result: 1020
